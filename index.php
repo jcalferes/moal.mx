@@ -21,7 +21,7 @@
                 <h1>Datos de la empresa.</h1>
             </div>
         </div>
+        <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+        <link rel="stylesheet" href="bootstrap/js/jquery.js">
     </body>
-    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
-    <link rel="stylesheet" href="bootstrap/js/jquery.js">
 </html>
