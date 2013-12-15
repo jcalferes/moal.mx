@@ -18,6 +18,7 @@
         </div>
         <div id="datos" class="container alejararriba">
             <div class="jumbotron">
+                <h1>Datos de la empresa.</h1>
             </div>
         </div>
     </body>
