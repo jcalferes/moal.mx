@@ -18,9 +18,7 @@
         </div>
         <div id="datos" class="container alejararriba">
             <div class="jumbotron">
-                <h1>Datos de la empresa.</h1>
-                
-                <h1>Prueba </h1>
+                <h1>Datos.</h1>
             </div>
         </div>
         <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
