@@ -13,7 +13,13 @@
         <!--[if lt IE 9]>
           <script src="js/bootstrap/html5shiv.js"></script>
           <script src="js/bootstrap/respond.min.js"></script>
+        
         <![endif]-->
+        <script> 
+            $(document).ready(function() {      
+   $("mostrar").load("cargaImagen");
+    });
+</script>
     </head>
     <body class="page-index">
         <div class="container" id="container">
@@ -61,7 +67,7 @@
                     <h1 class="visible-xs section-header">Promociones</h1>
                     <h1 class="visible-xs text-center spacer">___</h1>
                     <!-- Aqui dentro va el contenido de las promociones -->
-
+                    <div id="mostrar"></div>
                     <!-- Fin del contenido de las promociones -->
                     <a class="btn btn-block scroll-top visible-xs">
                         <img src="img/icon/icon-chevron.png" alt="Scroll top">
