@@ -33,7 +33,7 @@
     </head>
     <body class="page-index">
         <div class="container" id="container">
-
+           
             <div class="row top">
                 <div class="col-lg-8 col-md-8 col-sm-7 col-left">
                     <div class="name"><a href="">Nombre Empresa</a></div>
@@ -77,9 +77,11 @@
                     <h1 class="visible-xs section-header">Promociones</h1>
                     <h1 class="visible-xs text-center spacer">___</h1>
                     <!-- Aqui dentro va el contenido de las promociones -->
+                     <center>
                     <div  id="mostrar">
 
                     </div>
+                         </center>
                     <!-- Fin del contenido de las promociones -->
                     <a class="btn btn-block scroll-top visible-xs">
                         <img src="img/icon/icon-chevron.png" alt="Scroll top">
