@@ -17,16 +17,13 @@ while($rs=mysql_fetch_array($datos)){
                                     <a href='project-example.html'>
 
                                         <!--work image-->
-                                        <img src='".$rs["ruta"]. "' width=50% > 
+                                        <img src='".$rs["ruta"]. "' width=100% > 
                                     </a>
                                 </div>
                                 <div class='panel-body'>
 
                                     <!--work title-->
                                     <a href='project-1.html'><h4 class='item-title'>".$rs["nombreProducto"]."</h4></a>
-
-                                    <!--work category-->
-                                    <p class='item-category'>Logotype</p>
 
                                     <!--work short description-->
                                     <p class='item-description'>".$rs["descripcion"]."</p>
