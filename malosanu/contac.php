@@ -27,16 +27,16 @@
 
             <div class="row top">
                 <div class="col-lg-8 col-md-8 col-sm-7 col-left">
-                    <div class="name"><a href="#">Nombre Empresa</a></div>
+                    <div class="name"><a href="">Nombre Empresa</a></div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-5 col-right">
                     <nav>
                         <ul class="list-inline" id="menu">
                             <li>
-                                <a href="index.html">Inicio</a>
+                                <a href="index.php">Inicio</a>
                             </li><!--
                             --><li class=" active">
-                                <a href="contact.html">Contacto</a>
+                                <a href="contac.php">Contacto</a>
                             </li><!--
                             --><li>
                             </li><!--

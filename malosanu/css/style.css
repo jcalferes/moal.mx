@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,400italic|Open+Sans+Condensed:300,700|Pacifico);
+/*@import url(http://fonts.googleapis.com/css?family=Lato:300,400,400italic|Open+Sans+Condensed:300,700|Pacifico);*/
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -130,7 +130,7 @@ body,
     }
 }
 .row.top .col-left .name {
-    font-family: 'Pacifico', cursive;
+    /*font-family: 'Pacifico', cursive;*/
     font-size: 1.5em;
     padding: 10px 30px;
     margin-bottom: 0;
@@ -169,11 +169,11 @@ body,
 .row.top .col-right nav .list-inline li.active a:hover {
     background: #f7f7f7;
 }
-.row.top .col-right nav .list-inline li a {
+.row.top .col-right nav .list-inline li a {/*Aqui se controlan las fuentes de la NAVBAR*/
     display: block;
-    font-family: 'Open Sans Condensed', sans-serif;
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
     font-weight: bold;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color: #333333;
     border-right: 1px solid #e6e6e6;
     padding: 10px 0;
