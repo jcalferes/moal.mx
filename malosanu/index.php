@@ -76,6 +76,42 @@
 
                     <h1 class="visible-xs section-header">Promociones</h1>
                     <h1 class="visible-xs text-center spacer">___</h1>
+                    <!-- =============================AQUI EMPIESA EL CODIGO DE UN CUADRO========================== 
+                    <section class="row" id="Grid">
+                                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-6 mix web-design">
+                                                    <div class="panel panel-default item">
+                                                        <div class="panel-heading">
+                                                            <a href="project-example.html">
+                        
+                                                                
+                                                                <img class="img-responsive item-img" src="img/work/projet-example-1.png" alt="Work 1">
+                        
+                                                            </a>
+                                                        </div>
+                                                        <div class="panel-body">
+                        
+                                                           
+                                                            <a href="project-1.html"><h4 class="item-title">Project Title</h4></a>
+                        
+                                                            
+                                                            <p class="item-category">Logotype</p>
+                        
+                                                            
+                                                            <p class="item-description">Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri</p>
+                                                            <hr>
+                        
+                                                            
+                                                            <p class="item-tags">
+                                                                <a href="#">illustration</a> ,
+                                                                <a href="#">graphic design</a> ,
+                                                                <a href="#">website</a>
+                                                            </p>
+                        
+                                                        </div>
+                                                    </div>
+                                                </div>
+                    </section>
+                         =============================AQUI TERMINA EL CODIGO DE UN CUADRO========================== -->
                     <!-- Aqui dentro va el contenido de las promociones -->
                     <div  id="mostrar">
 
