@@ -11,7 +11,38 @@ include '../DaoConnection/coneccion.php';
 //     $imagen->setTipo($rs["tipo"]);
 //      }
 while($rs=mysql_fetch_array($datos)){
- echo"<img src='".$rs["ruta"]. "' width=110 height=80>";
+   echo "<div class='col-lg-6 col-md-12 col-sm-12 col-xs-6 mix web-design'>
+                            <div class='panel panel-default item'>
+                                <div class='panel-heading'>
+                                    <a href='project-example.html'>
+
+                                        <!--work image-->
+                                        <img src='".$rs["ruta"]. "' width=50% > 
+                                    </a>
+                                </div>
+                                <div class='panel-body'>
+
+                                    <!--work title-->
+                                    <a href='project-1.html'><h4 class='item-title'>Project Title</h4></a>
+
+                                    <!--work category-->
+                                    <p class='item-category'>Logotype</p>
+
+                                    <!--work short description-->
+                                    <p class='item-description'>Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri</p>
+                                    <hr>
+
+                                    <!--work tags-->
+                                    <p class='item-tags'>
+                                        <a href='#'>illustration</a> ,
+                                        <a href='#'>graphic design</a> ,
+                                        <a href='#'>website</a>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>";
+ echo"img src='".$rs["ruta"]. "' width=50% > ";
     
     
 }
