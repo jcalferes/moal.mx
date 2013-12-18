@@ -15,22 +15,21 @@
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="css/style.css" rel="stylesheet" media="screen">
- <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css"/>
-        
         <script src="../bootstrap/js/jquery.js"></script>
         <script src="../bootsTrap/js/bootstrap.js"></script>
         <script>
-    $(document).ready(function() {      
-   $('#mostrar').load('cargarImagen.php');
-    });
+            $(document).ready(function() {
+                $('#mostrar').load('cargarImagen.php');
+            });
         </script>
+
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="js/bootstrap/html5shiv.js"></script>
           <script src="js/bootstrap/respond.min.js"></script>
         
         <![endif]-->
-       
+
     </head>
     <body class="page-index">
         <div class="container" id="container">
@@ -78,10 +77,9 @@
                     <h1 class="visible-xs section-header">Promociones</h1>
                     <h1 class="visible-xs text-center spacer">___</h1>
                     <!-- Aqui dentro va el contenido de las promociones -->
-                    <div id="mostrar">
-                        
-                        
-                        </div>
+                    <div  id="mostrar">
+
+                    </div>
                     <!-- Fin del contenido de las promociones -->
                     <a class="btn btn-block scroll-top visible-xs">
                         <img src="img/icon/icon-chevron.png" alt="Scroll top">
@@ -89,7 +87,6 @@
                 </div>
             </div>                        
         </div>  
-
         <script src="js/jquery.js"></script>
         <!-- FASTCLICK -->
         <script src="js/plugins/fastclick/fastclick.js"></script>
@@ -97,7 +94,6 @@
         <script src="js/plugins/smooth-scroll/jquery.smooth-scroll.min.js"></script>
         <!-- MIXITUP -->
         <script src="js/plugins/mixitup/jquery.mixitup.min.js"></script>
-
         <script src="js/main.js"></script>
     </body>
 </html>
