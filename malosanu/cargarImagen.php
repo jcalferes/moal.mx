@@ -20,4 +20,4 @@ while($rs=mysql_fetch_array($datos)){
     
     
  
-?>
+
