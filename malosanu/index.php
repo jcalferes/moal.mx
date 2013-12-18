@@ -76,11 +76,14 @@
 
                     <h1 class="visible-xs section-header">Promociones</h1>
                     <h1 class="visible-xs text-center spacer">___</h1>
+
                     <!-- Aqui dentro va el contenido de las promociones -->
                     <div  id="mostrar">
 
                     </div>
                     <!-- Fin del contenido de las promociones -->
+                    <section class="row" id="Grid">
+                    </section>
                     <a class="btn btn-block scroll-top visible-xs">
                         <img src="img/icon/icon-chevron.png" alt="Scroll top">
                     </a>
