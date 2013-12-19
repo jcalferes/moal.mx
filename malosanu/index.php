@@ -59,17 +59,17 @@
             </div>
             <div class="row bottom">
                 <div class="col-lg-8 col-md-8 col-sm-7 col-left">
-                    <div>
-                        <section>
-                            <div class="row text-center" >
-                                <div class="col-lg-12">
-                                    <!-- Aqui dentro todo el contenido dinamico -->
-
-                                    <!-- Fin de la seccionde contenido dinamico -->
-                                </div>
-                            </div>   
-                        </section>
-                    </div>
+                    <!--Aqui empiza el codigo a poner el el ECHO-->
+                    <!--<div>
+                                            <section>
+                                                <div class="row text-center" >
+                                                    <div class="col-lg-12">
+                                                         Aqui dentro todo el contenido de la pagina (imagenes, texto, etc...)
+                                                    </div>
+                                                </div>   
+                                            </section>
+                                        </div>-->
+                    <!--Aqui termina el codio para poner en el ECHO-->
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-5 col-right">
                     <div id="scroll-shadow"></div> 
