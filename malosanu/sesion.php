@@ -27,9 +27,28 @@
     <body class="page-contact">
         <div class="container" id="container">
             <div class="row top">
-                <div class="col-lg-12 col-left">
-                    <div class="name"><a href="">Nombre Empresa</a></div>
-                </div>
+                <nav class="navbar navbar-inverse" role="navigation" style="margin-top: -2px">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Nombre de la Empresa</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="">Inicio</a></li>
+                            <li><a href="">Contacto</a></li>
+                            <li><a href="">Otro</a></li>
+                            <li><a href="">Otro</a></li>
+                            <li><a href="">Otro</a></li>
+                            <li><a href="">Otro</a></li>
+                            <li><a href="">Otro</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
             <div class="row bottom">
                 <div class="col-lg-12 col-left">

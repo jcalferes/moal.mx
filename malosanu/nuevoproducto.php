@@ -13,9 +13,9 @@
         <link rel="icon" type="image/png" href="#">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
         <link href="css/style.css" rel="stylesheet" media="screen">
-
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="js/bootstrap/html5shiv.js"></script>
@@ -24,7 +24,6 @@
     </head>
     <body class="page-contact">
         <div class="container" id="container">
-
             <div class="row top">
                 <nav class="navbar navbar-inverse" role="navigation" style="margin-top: -2px">
                     <div class="navbar-header">
@@ -35,12 +34,11 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="#">Nombre de la Empresa</a>
-                         <a class="navbar-brand" href="#">Nombre de la Empresa</a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.php">Inicio</a></li>
-                            <li><a href="contac.php">Contacto</a></li>
+                            <li><a href="">Inicio</a></li>
+                            <li><a href="">Contacto</a></li>
                             <li><a href="">Otro</a></li>
                             <li><a href="">Otro</a></li>
                             <li><a href="">Otro</a></li>
@@ -52,35 +50,48 @@
             </div>
             <div class="row bottom">
                 <div class="col-lg-8 col-md-8 col-sm-7 col-left">
-                    <section>
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+                    <div>
+                        <section>
+                            <div class="row text-center">
+                                <div class="col-lg-12">
 
-                                <!--input contact-->
-                                <h1>Contacto</h1>
-                                <h1 class="spacer">___</h1>
-                                <p>Aqui el texto informativo.</p>
-                                <hr>
-                                <div class="panel panel-default contact btn-footer">
-                                    <div class="panel-body">
-                                        <form role="form">
-                                            <div class="form-group">
-                                                <label for="contactEmail">Email</label>
-                                                <input type="email" class="form-control" id="contactEmail">
+                                    <!--input contact-->
+                                    <h1>Nuevo producto</h1>
+                                    <h1 class="spacer">___</h1>
+                                    <p>Ingrese los datos correspondientes al nuevo produto a publicar.</p>
+                                    <h4><span class="text-muted">Seccion de promociones</span></h4>
+                                    <hr>
+                                    <form role="form">
+                                        <div class="panel panel-default contact btn-footer">
+                                            <div class="panel-body">
+
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="txtnombreproducto" placeholder="Nombre del producto" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Seleccione una imagen de producto</label>
+                                                    <input type="file" class="form-control" id="flcfotoproducto"/> 
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" rows="5" id="txadescripcion" placeholder="Descripcion breve del producto"></textarea>
+                                                </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="contactMessage">Mensage</label>
-                                                <textarea class="form-control" rows="10" id="contactMessage"></textarea>
+                                            <h4><span class="text-muted">Detalles de producto</span></h4>
+                                            <hr>
+                                            <div class="panel-body">
+                                                <div class="form-group">
+                                                    <textarea class="form-control textarea" rows="10" id="txadescripcion" placeholder="Descripcion del producto"></textarea>
+                                                </div>
                                             </div>
-                                        </form>
-                                    </div>
-                                    <div class="panel-footer">
-                                        <a class="btn btn-grey btn-lg btn-block">Enviar</a>
-                                    </div>
+                                            <div class="panel-footer">
+                                                <input type="submit" class="btn btn-grey btn-lg btn-block" value="Guardar"/>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                            </div>
-                        </div>    
-                    </section>
+                            </div>   
+                        </section>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-5 col-right">
                     <div id="scroll-shadow"></div>
@@ -127,7 +138,8 @@
             </div>                        
         </div>  
 
-        <script src="js/jquery.js"></script>
+        <script src="../bootstrap/js/jquery.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
         <!-- FASTCLICK -->
         <script src="js/plugins/fastclick/fastclick.js"></script>
         <!-- SMOOTH SCROLL -->
@@ -138,4 +150,5 @@
         <script src="js/main.js"></script>
     </body>
 </html>
+
 

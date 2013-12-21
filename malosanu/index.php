@@ -35,27 +35,28 @@
         <div class="container" id="container">
 
             <div class="row top">
-                <div class="col-lg-8 col-md-8 col-sm-7 col-left">
-                    <div class="name"><a href="">Nombre Empresa</a></div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-5 col-right">
-                    <nav>
-                        <ul class="list-inline" id="menu">
-                            <li class="active">
-                                <a href="index.php">Inicio</a>
-                            </li><!--
-                            --><li>
-                                <a href="contac.php">Contacto</a>
-                            </li><!--
-                            --><li>
-                            </li><!--
-                            --><li>
-                                <a href="#"><img class="social" src="img/icon/icon-facebook.png" alt="facebook"></a>
-                                <a href="#"><img class="social" src="img/icon/icon-twitter.png" alt="twitter"></a>
-                            </li>
+                <nav class="navbar navbar-inverse" role="navigation" style="margin-top: -2px">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Nombre de la Empresa</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.php">Inicio</a></li>
+                            <li><a href="contac.php">Contacto</a></li>
+                            <li><a href="">Otro</a></li>
+                            <li><a href="">Otro</a></li>
+                            <li><a href="">Otro</a></li>
+                            <li><a href="">Otro</a></li>
+                            <li><a href="">Otro</a></li>
                         </ul>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
             </div>
             <div class="row bottom">
                 <div class="col-lg-8 col-md-8 col-sm-7 col-left">
@@ -82,7 +83,7 @@
 
                     </div>
                     <!-- Fin del contenido de las promociones -->
-                    <section class="row" id="Grid">
+                    <!--<section class="row" id="Grid">-->
                     </section>
                     <a class="btn btn-block scroll-top visible-xs">
                         <img src="img/icon/icon-chevron.png" alt="Scroll top">
