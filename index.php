@@ -18,7 +18,7 @@
         <script src="malosanu/js/jquery.js"></script>
         <script>
             $(document).ready(function() {
-                $('#mostrar').load('cargarImagen.php');
+                $('#mostrar').load('funciones/cargarImagen.php');
             });
         </script>
 

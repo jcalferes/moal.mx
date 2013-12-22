@@ -15,7 +15,8 @@
         <!-- Bootstrap -->
         <link href="malosanu/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="malosanu/css/style.css" rel="stylesheet" media="screen">
-        <script src="malosanu/js/jquery.js"></script>
+        <link href="alertify3/themes/alertify.core.css" rel="stylesheet" media="screen">
+        <link href="alertify3/themes/alertify.default.css" rel="stylesheet" media="screen">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="js/bootstrap/html5shiv.js"></script>
@@ -58,23 +59,23 @@
                                 <!--input contact-->
                                 <h1>Contacto</h1>
                                 <h1 class="spacer">___</h1>
-                                <p>Aqui el texto informativo.</p>
+                                <p>...</p>
                                 <hr>
                                 <div class="panel panel-default contact btn-footer">
                                     <div class="panel-body">
-                                        <form role="form">
+                                        <form role="form" name="sesion">
                                             <div class="form-group">
                                                 <label for="contactEmail">Email</label>
-                                                <input type="email" class="form-control" id="contactEmail">
+                                                <input  id="txtemail" type="" class="form-control" id="contactEmail">
                                             </div>
                                             <div class="form-group">
                                                 <label for="contactMessage">Mensage</label>
-                                                <textarea class="form-control" rows="10" id="contactMessage"></textarea>
+                                                <textarea id="txamensaje" name="mensaje" class="form-control" rows="10" id="contactMessage"></textarea>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="panel-footer">
-                                        <a class="btn btn-grey btn-lg btn-block">Enviar</a>
+                                        <input id="btnenviar" type="submit" class="btn btn-grey btn-lg btn-block" value="Enviar"/>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +87,6 @@
                     <section>
                         <div class="row">
                             <div class="col-lg-12">
-
                                 <!--panel contact-->
                                 <div class="panel panel-default item">
                                     <div class="panel-heading">
@@ -127,7 +127,9 @@
                 </div>
             </div>                        
         </div>  
+        <script src="malosanu/js/jquery.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="alertify3/lib/alertify.min.js"></script>
         <!-- FASTCLICK -->
         <script src="malosanu/js/plugins/fastclick/"></script>
         <!-- SMOOTH SCROLL -->
@@ -135,6 +137,33 @@
         <!-- MIXITUP -->
         <script src="malosanu/js/plugins/mixitup/jquery.mixitup.min.js"></script>
         <script src="malosanu/js/main.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#btnenviar').click(function() {
+                    var email = $("#txtemail").val();
+                    var mensaje = $('#txamensaje').val();
+                    var datos = "email=" + email + "&mensaje=" + mensaje;
+                    if (document.sesion.mensaje.value.length == 0) {
+                        alertify.error("Escriba un mensaje");
+                    }
+                    else {
+                        $.get('funciones/enviaContacto.php', datos, function(respuesta) {
+                            var info = $.parseJSON(respuesta);
+                            if (info == 1)
+                            {
+                                alertify.error("Email no valido");
+                            }
+                            if (info == 2)
+                            {
+                                alertify.success("Todo bien.");
+                            }
+                        });
+                        $("#txtemail").val("");
+                        $("#txamensaje").val("");
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
 

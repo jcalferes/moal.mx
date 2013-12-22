@@ -1,7 +1,7 @@
 <?php
 
-include 'clases/imagen.php';
-include 'DaoConnection/coneccion.php';
+include '../clases/imagen.php';
+include '../DaoConnection/coneccion.php';
 $cn = new coneccion();
 $sql = "SELECT * FROM imagen i, producto p, ofertas o Where i.idImagen = p.idimagen and o.idProductoOferta= p.idProducto order by rand()";
 $datos = mysql_query($sql, $cn->Conectarse());
