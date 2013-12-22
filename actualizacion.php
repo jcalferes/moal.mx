@@ -13,10 +13,8 @@
         <link rel="icon" type="image/png" href="#">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <!-- Bootstrap -->
-        <!--        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-                <link href="../bootstrap/css/bootstrap-theme.css" rel="stylesheet" media="screen">-->
-        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="css/style.css" rel="stylesheet" media="screen">
+        <link href="malosanu/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="malosanu/css/style.css" rel="stylesheet" media="screen">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -29,18 +27,7 @@
             <div class="row top">
                 <nav class="navbar navbar-inverse" role="navigation" style="margin-top: -6px">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#"><img class="" src="img/moallogosm.png" style="width: 250px" ></a>
-
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                        </ul>
+                        <a class="navbar-brand" href="#"><img class="" src="malosanu/img/moallogosm.png" style="width: 250px" ></a>
                     </div>
                 </nav>
             </div>
@@ -58,7 +45,7 @@
                                         <div class="row text-center">
                                             <div class="col-lg-12">
                                                 <!--activity image-->
-                                                <img class="img-responsive " style="margin: 0 auto; width: 100px" src="img/MoalLogo.png" alt="">
+                                                <img class="img-responsive " style="margin: 0 auto; width: 100px" src="malosanu/img/MoalLogo.png" alt="">
 
                                                 <!--activity title -->
                                                 <h3>Actualmente nuestra página se encuentra en proceso de actualización.</h3>
@@ -86,16 +73,13 @@
                 </div>
             </div>                        
         </div>  
-<!--        <script src="../bootstrap/js/bootstrap.min.js"></script>
-        <script src="../bootstrap/js/jquery.js"></script>-->
-        <script src="js/jquery.js"></script>
+        <script src="malosanu/js/jquery.js"></script>
         <!-- FASTCLICK -->
-        <script src="js/plugins/fastclick/fastclick.js"></script>
+        <script src="malosanu/js/plugins/fastclick/"></script>
         <!-- SMOOTH SCROLL -->
-        <script src="js/plugins/smooth-scroll/jquery.smooth-scroll.min.js"></script>
+        <script src="malosanu/js/plugins/smooth-scroll/jquery.smooth-scroll.min.js"></script>
         <!-- MIXITUP -->
-        <script src="js/plugins/mixitup/jquery.mixitup.min.js"></script>
-
-        <script src="js/main.js"></script>
+        <script src="malosanu/js/plugins/mixitup/jquery.mixitup.min.js"></script>
+        <script src="malosanu/js/main.js"></script>
     </body>
 </html>

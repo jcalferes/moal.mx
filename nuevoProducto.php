@@ -13,9 +13,9 @@
         <link rel="icon" type="image/png" href="#">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <!-- Bootstrap -->
-        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="../bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
-        <link href="css/style.css" rel="stylesheet" media="screen">
+        <link href="malosanu/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="malosanu/css/style.css" rel="stylesheet" media="screen">
+
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="js/bootstrap/html5shiv.js"></script>
@@ -25,7 +25,7 @@
     <body class="page-contact">
         <div class="container" id="container">
             <div class="row top">
-                <nav class="navbar navbar-inverse" role="navigation" style="margin-top: -2px">
+                <nav class="navbar navbar-inverse" role="navigation" style="margin-top: -6px">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="sr-only">Toggle navigation</span>
@@ -33,12 +33,12 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Nombre de la Empresa</a>
+                        <a class="navbar-brand" href="#"><img class="" src="malosanu/img/moallogosm.png" style="width: 250px" ></a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="">Inicio</a></li>
-                            <li><a href="">Contacto</a></li>
+                            <li><a href="index.php">Inicio</a></li>
+                            <li><a href="contacto.php">Contacto</a></li>
                             <li><a href="">Otro</a></li>
                             <li><a href="">Otro</a></li>
                             <li><a href="">Otro</a></li>
@@ -105,28 +105,28 @@
                                         <a href="#">
 
                                             <!--your image-->    
-                                            <img class="img-responsive item-img" src="img/contact/avatar-contact.jpg" alt="Avatar">
+                                            <img class="img-responsive " style="margin: 0 auto" src="malosanu/img/MoalLogo.png" alt="">
 
                                         </a>
                                     </div>
                                     <div class="panel-body">
 
                                         <!--your name-->
-                                        <a href="#"><h4 class="item-title">Eldun malosanu</h4></a>
+                                        <a href="#"><h4 class="item-title">...</h4></a>
 
                                         <!--your profession / where you live-->
-                                        <p class="item-category">Freelance web designer, in Los Angeles</p>
+                                        <p class="item-category">...</p>
 
                                         <!--your descritpion / why should we contact you-->
-                                        <p class="item-description">Iam virtutem ex consuetudine vitae sermonisque nostri nostri nostri, quicquid increpuisset, ad salutis suae dispendium existim.</p>
+                                        <p class="item-description">...</p>
                                         <hr>
 
                                         <!--social networks-->
                                         <div class="item-social text-center">
-                                            <a href="#"><img class="social" src="img/icon/icon-facebook.png" alt="Facebook"></a>
-                                            <a href="#"><img class="social bis" src="img/icon/icon-twitter.png" alt="Twitter"></a>
-                                            <a href="#"><img class="social" src="img/icon/icon-google.png" alt="Google plus"></a>
-                                            <a href="#"><img class="social bis" src="img/icon/icon-linkedin.png" alt="Linkedin"></a>
+                                            <a href="#"><img class="social" src="malosanu/img/icon/icon-facebook.png" alt="Facebook"></a>
+                                            <a href="#"><img class="social bis" src="malosanu/img/icon/icon-twitter.png" alt="Twitter"></a>
+                                            <a href="#"><img class="social" src="malosanu/img/icon/icon-google.png" alt="Google plus"></a>
+                                            <a href="#"><img class="social bis" src="malosanu/img/icon/icon-linkedin.png" alt="Linkedin"></a>
                                         </div>
 
                                     </div>
@@ -137,17 +137,14 @@
                 </div>
             </div>                        
         </div>  
-
-        <script src="../bootstrap/js/jquery.js"></script>
-        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="malosanu/js/jquery.js"></script>
         <!-- FASTCLICK -->
-        <script src="js/plugins/fastclick/fastclick.js"></script>
+        <script src="malosanu/js/plugins/fastclick/"></script>
         <!-- SMOOTH SCROLL -->
-        <script src="js/plugins/smooth-scroll/jquery.smooth-scroll.min.js"></script>
+        <script src="malosanu/js/plugins/smooth-scroll/jquery.smooth-scroll.min.js"></script>
         <!-- MIXITUP -->
-        <script src="js/plugins/mixitup/jquery.mixitup.min.js"></script>
-
-        <script src="js/main.js"></script>
+        <script src="malosanu/js/plugins/mixitup/jquery.mixitup.min.js"></script>
+        <script src="malosanu/js/main.js"></script>
     </body>
 </html>
 
