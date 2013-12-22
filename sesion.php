@@ -15,6 +15,8 @@
         <!-- Bootstrap -->
         <link href="malosanu/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="malosanu/css/style.css" rel="stylesheet" media="screen">
+        <link href="alertify3/themes/alertify.core.css" rel="stylesheet" media="screen">
+        <link href="alertify3/themes/alertify.default.css" rel="stylesheet" media="screen">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -35,7 +37,7 @@
                 <div class="col-lg-12 col-left">
                     <section>
                         <div class="row">
-                            <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 ">
+                            <div class="col-lg-4 col-lg-offset-4  col-md-4  col-md-offset-4 col-sm-5 col-sm-offset-4  ">
                                 <!--input contact-->
                                 <h1>Iniciar Sesion</h1>
                                 <h1 class="spacer">___</h1>
@@ -44,7 +46,7 @@
                                         <div class="panel-body">
                                             <div class="form-group">
                                                 <label for="contactUsuario">Usuario</label>
-                                                <input id="txtusuario" type="text" class="form-control" required autofocus>
+                                                <input id="txtusuario" type="text" class="form-control" required="bababa" autofocus>
                                             </div>
                                             <div class="form-group">
                                                 <label for="contactPassword">Password</label>
@@ -53,7 +55,7 @@
                                         </div>
                                         <div class="panel-footer">
                                             <!--<a class="btn btn-grey btn-lg btn-block">Iniciar Session</a>-->
-                                            <input type="submit" class="btn btn-grey btn-lg btn-block" value="Iniciar Sesion"/>
+                                            <input id="iniciar" type="submit" class="btn btn-grey btn-lg btn-block" value="Iniciar Sesion"/>
                                         </div>
                                     </form>
                                 </div>
@@ -64,6 +66,7 @@
             </div>                        
         </div>  
         <script src="malosanu/js/jquery.js"></script>
+        <script src="alertify3/lib/alertify.min.js"></script>
         <!-- FASTCLICK -->
         <script src="malosanu/js/plugins/fastclick/"></script>
         <!-- SMOOTH SCROLL -->
@@ -71,5 +74,12 @@
         <!-- MIXITUP -->
         <script src="malosanu/js/plugins/mixitup/jquery.mixitup.min.js"></script>
         <script src="malosanu/js/main.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#iniciar').click(function() {
+                    alertify.log("Usuario y contraseña no pueden estar vacios.");
+                });
+            });
+        </script>
     </body>
 </html>
