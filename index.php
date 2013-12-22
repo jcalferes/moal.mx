@@ -77,7 +77,7 @@
                 </div>
             </div>                        
         </div>  
-
+        <script src="bootstrap/js/bootstrap.min.js"></script>
         <!-- FASTCLICK -->
         <script src="malosanu/js/plugins/fastclick/"></script>
         <!-- SMOOTH SCROLL -->

@@ -15,7 +15,7 @@
         <!-- Bootstrap -->
         <link href="malosanu/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="malosanu/css/style.css" rel="stylesheet" media="screen">
-
+        <script src="malosanu/js/jquery.js"></script>
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="js/bootstrap/html5shiv.js"></script>
@@ -134,10 +134,13 @@
                             </div>
                         </div>    
                     </section>
+                    <a class="btn btn-block scroll-top visible-xs">
+                        <img src="malosanu/img/icon/icon-chevron.png" alt="Ir arriba">
+                    </a>
                 </div>
             </div>                        
         </div>  
-        <script src="malosanu/js/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
         <!-- FASTCLICK -->
         <script src="malosanu/js/plugins/fastclick/"></script>
         <!-- SMOOTH SCROLL -->
