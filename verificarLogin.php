@@ -1,7 +1,9 @@
 <?php
 include './clases/usuario.php';
 include './dao/dao.php';
+
 $usuario = new usuario();
+
 $dao = new dao();
 $usuario->setUsuario($_GET["usua"]);
 $usuario->setPass($dao->genera_md5($_GET["pass"]));

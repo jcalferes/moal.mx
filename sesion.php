@@ -79,7 +79,14 @@
         <script>
             $(document).ready(function() {
                 $('#iniciar').click(function() {
-                    alertify.log("Usuario y contraseña no pueden estar vacios.");
+                    var usua = $("#txtusuario").val();
+                    var pass = $('#txtpass').val();
+                    if (usua != "" && pass != "") {
+                        $(this).load("verificarLogin.php?usua=" + usua + "&pass=" + pass);
+                    } else {
+                    }
+                
+                
                 });
             });
         </script>
