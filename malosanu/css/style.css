@@ -164,7 +164,7 @@ body,
     background: #fff;
 }
 .row.top .col-right nav .list-inline li.active {
-    background: #f7f7f7;
+    /*background: #f7f7f7;*/
 }
 .row.top .col-right nav .list-inline li.active a:hover {
     background: #f7f7f7;
@@ -177,7 +177,8 @@ body,
     color: #333333;
     border-right: 1px solid #e6e6e6;
     padding: 10px 0;
-    font-size: 16px;
+    /*font-size: 20px;*/
+    margin: 5%;
 }
 @media (min-width: 768px) and (max-width: 992px) {
     .row.top .col-right nav .list-inline li a {
@@ -186,12 +187,12 @@ body,
 }
 @media (min-width: 992px) {
     .row.top .col-right nav .list-inline li a {
-        font-size: 21px;
+        /*font-size: 21px;*/
     }
 }
 @media (min-width: 468px) and (max-width: 768px) {
     .row.top .col-right nav .list-inline li a {
-        font-size: 21px;
+        /*font-size: 21px;*/
     }
 }
 .row.top .col-right nav .list-inline li a:hover {
