@@ -1,7 +1,7 @@
 <?php
 include './clases/usuario.php';
 include './dao/dao.php';
-
+include 'DaoConnection/coneccion.php';
 $usuario = new usuario();
 
 $dao = new dao();

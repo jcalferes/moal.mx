@@ -1,17 +1,14 @@
 <?php
 
-include '../DaoConnection/coneccion.php';
+
 
 class dao {
 
-    function genera_md5($clave) {
-        $codificado = md5($clave);
-        return $codificado;
-    }
-
     function validarLogin(usuario $u) {
-        $cn = new coneccion();
+//        include '../DaoConnection/coneccion.php';
         $paso = false;
+        $cn= new coneccion();
+        
         $sql = "SELECT * FROM usuario WHERE usuario='" . $u->getUsuario() . "' AND pass='" . $u->getPass() . "'";
         $dato = mysql_query($sql, $cn->Conectarse());
         $columnas = mysql_affected_rows();
@@ -23,5 +20,13 @@ class dao {
         $cn->cerrarBd();
         return $paso;
     }
+    
+    
+    function genera_md5($clave) {
+        $codificado = md5($clave);
+        return $codificado;
+    }
+
+    
 
 }
