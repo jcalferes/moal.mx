@@ -13,9 +13,9 @@
         <link rel="icon" type="image/png" href="#">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="css/style.css" rel="stylesheet" media="screen">
-
+        <link href="malosanu/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="malosanu/css/style.css" rel="stylesheet" media="screen">
+        <script src="malosanu/js/jquery.js"></script>
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
           <script src="js/bootstrap/html5shiv.js"></script>
@@ -342,15 +342,13 @@
                 </div>
             </div>                        
         </div>  
-
-        <script src="js/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
         <!-- FASTCLICK -->
-        <script src="js/plugins/fastclick/fastclick.js"></script>
+        <script src="malosanu/js/plugins/fastclick/"></script>
         <!-- SMOOTH SCROLL -->
-        <script src="js/plugins/smooth-scroll/jquery.smooth-scroll.min.js"></script>
+        <script src="malosanu/js/plugins/smooth-scroll/jquery.smooth-scroll.min.js"></script>
         <!-- MIXITUP -->
-        <script src="js/plugins/mixitup/jquery.mixitup.min.js"></script>
-
-        <script src="js/main.js"></script>
+        <script src="malosanu/js/plugins/mixitup/jquery.mixitup.min.js"></script>
+        <script src="malosanu/js/main.js"></script>
     </body>
 </html>

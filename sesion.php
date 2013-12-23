@@ -42,8 +42,9 @@
                                 <h1>Iniciar Sesion</h1>
                                 <h1 class="spacer">___</h1>
                                 <div class="panel panel-default contact btn-footer">
-                                    <form class="form-signin" role="form">
-                                        <div class="panel-body">
+
+                                    <div class="panel-body">
+                                        <form class="form-signin" role="form">
                                             <div class="form-group">
                                                 <label for="contactUsuario">Usuario</label>
                                                 <input id="txtusuario" type="text" class="form-control" required="bababa" autofocus>
@@ -52,12 +53,13 @@
                                                 <label for="contactPassword">Password</label>
                                                 <input id="txtpass" type="password" class="form-control" required>
                                             </div>
-                                        </div>
-                                        <div class="panel-footer">
-                                            <!--<a class="btn btn-grey btn-lg btn-block">Iniciar Session</a>-->
-                                            <input id="iniciar" type="submit" class="btn btn-grey btn-lg btn-block" value="Iniciar Sesion"/>
-                                        </div>
+                                    </div>
                                     </form>
+                                    <div class="panel-footer">
+                                        <!--<a class="btn btn-grey btn-lg btn-block">Iniciar Session</a>-->
+                                        <input id="iniciar" type="submit" class="btn btn-grey btn-lg btn-block" value="Iniciar Sesion"/>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>    
