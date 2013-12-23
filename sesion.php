@@ -23,21 +23,6 @@
           <script src="js/bootstrap/html5shiv.js"></script>
           <script src="js/bootstrap/respond.min.js"></script>
         <![endif]-->
-  <script>
-            $(document).ready(function() {
-                
-                $('#verificacion').click(function() {
-                    var usua = $("#txtusuario").val();
-                    var pass = $('#txtpass').val();
-                    if (usua !== "" && pass !== "") {
-                        alert("algo");
-                        $(this).load("verificarLogin.php?usua=" + usua + "&pass=" + pass);
-                    } else {
-                        alertify.log("Usuario y contraseña no pueden estar vacios.");
-                    }
-                });
-            });
-        </script>
     </head>
     <body class="page-contact">
         <div class="container" id="container">
@@ -89,6 +74,12 @@
         <!-- MIXITUP -->
         <script src="malosanu/js/plugins/mixitup/jquery.mixitup.min.js"></script>
         <script src="malosanu/js/main.js"></script>
-        
+        <script>
+            $(document).ready(function() {
+                $('#iniciar').click(function() {
+                    alertify.log("Usuario y contraseña no pueden estar vacios.");
+                });
+            });
+        </script>
     </body>
 </html>
