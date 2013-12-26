@@ -24,7 +24,7 @@ while ($rs = mysql_fetch_array($datos)) {
                                 <div class='panel-body'>
 
                                     <!--work title-->
-                                    <a href='project-1.html'><h4 class='item-title'>" . $rs["nombreProducto"] . "</h4></a>
+                                    <a href='#' onclick='mi_funcion(" . $rs["idProducto"] . ")'><h4 class='item-title'>" . $rs["nombreProducto"] . "</h4></a>
 
                                     <!--work short description-->
                                     <p class='item-description'>" . $rs["descripcion"] . "</p>

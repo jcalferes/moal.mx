@@ -17,6 +17,13 @@
         <link href="malosanu/css/style.css" rel="stylesheet" media="screen">
         <script src="malosanu/js/jquery.js"></script>
         <script>
+            function mi_funcion(a)                    
+            {
+             
+
+               
+            }
+
             $(document).ready(function() {
                 $('#mostrar').load('funciones/cargarImagen.php');
             });
@@ -32,7 +39,7 @@
     </head>
     <body class="page-index">
         <div class="container" id="container">
-
+            <a onclick="mi_funcion()"></a>
             <div class="row top">
                 <nav class="navbar navbar-inverse" role="navigation" style="margin-top: -6px">
                     <div class="navbar-header">
