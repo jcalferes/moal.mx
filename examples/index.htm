@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML5 jQuery File Upload - LiteUploader Example</title>
+
+	<style>
+
+		body {
+			font-family: helvetica;
+			font-size: 13px;
+		}
+
+		#response {
+			font-weight: bold;
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+
+		.error {
+			font-weight: bold;
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<input type="file" name="fileUpload1" id="fileUpload1" class="fileUpload" />
+	<input type="file" name="fileUpload2" id="fileUpload2" class="fileUpload" multiple="multiple" />
+	<div id="details"></div>
+	<div id="response"></div>
+	<div id="previews"></div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="../jquery.liteuploader.min.js"></script>
+	<script>
+
+		$(document).ready(function ()
+		{
+			$('.fileUpload').liteUploader(
+			{
+				script: 'upload.php',
+				allowedFileTypes: 'image/jpeg,image/png,image/gif',
+				maxSizeInBytes: 250000,
+				customParams: {
+					'custom': 'tester'
+				},
+				before: function (files)
+				{
+					$('#details, #previews').empty();
+					$('#response').html('Uploading ' + files.length + ' file(s)...');
+				},
+				each: function (file, errors)
+				{
+					var i, errorsDisp = '';
+
+					if (errors.length > 0)
+					{
+						$('#response').html('One or more files did not pass validation');
+
+						$.each(errors, function(i, error)
+						{
+							errorsDisp += '<br /><span class="error">' + error.type + ' error - Rule: ' + error.rule + '</span>';
+						});
+					}
+
+					$('#details').append('<p>name: ' + file.name + ', type: ' + file.type + ', size:' + file.size + errorsDisp + '</p>');
+				},
+				success: function (response)
+				{
+					var response = $.parseJSON(response);
+
+					$.each(response.urls, function(i, url)
+					{
+						$('#previews').append($('<img>', {'src': url, 'width': 200}));
+					});
+
+					$('#response').html(response.message);
+				}
+			});
+		});
+
+	</script>
+</body>
+</html>
