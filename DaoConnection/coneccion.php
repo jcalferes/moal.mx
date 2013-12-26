@@ -9,11 +9,10 @@ class coneccion {
             echo "Error seleccionando la base de datos.";
             exit();
         }
-        
+
         return $link;
     }
-    function cerrarBd(){
+    function cerrarBd() {
         mysql_close();
     }
 }
-?>
