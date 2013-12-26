@@ -19,8 +19,8 @@
         <script>
             function mi_funcion(a)                    
             {
-             
-
+            var algo = a;
+$('#mostrarInfo').load('funciones/mostrarInfo.php?id='+algo);
                
             }
 
@@ -66,6 +66,12 @@
             </div>
             <div class="row bottom">
                 <div class="col-lg-8 col-md-8 col-sm-7 col-left">
+                    <div id="mostrarInfo">
+                        
+                    </div>
+                    
+                    
+                  
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-5 col-right">
                     <div id="scroll-shadow"></div> 

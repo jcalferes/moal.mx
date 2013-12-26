@@ -15,7 +15,7 @@ while ($rs = mysql_fetch_array($datos)) {
     echo "<div class='col-lg-6 col-md-12 col-sm-12 col-xs-6 mix web-design'>
                             <div class='panel panel-default item'>
                                 <div class='panel-heading'>
-                                    <a href='project-example.html'>
+                                    <a href='#' onclick='mi_funcion(".$rs["idProducto"].")'>
 
                                         <!--work image-->
                                         <img src='" . $rs["ruta"] . "' width=100% > 
