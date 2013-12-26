@@ -17,11 +17,11 @@
         <link href="malosanu/css/style.css" rel="stylesheet" media="screen">
         <script src="malosanu/js/jquery.js"></script>
         <script>
-            function mi_funcion(a)                    
+            function mi_funcion(a)
             {
-            var algo = a;
-$('#mostrarInfo').load('funciones/mostrarInfo.php?id='+algo);
-               
+                var algo = a;
+                $('#mostrarInfo').load('funciones/mostrarInfo.php?id=' + algo);
+
             }
 
             $(document).ready(function() {
@@ -67,11 +67,11 @@ $('#mostrarInfo').load('funciones/mostrarInfo.php?id='+algo);
             <div class="row bottom">
                 <div class="col-lg-8 col-md-8 col-sm-7 col-left">
                     <div id="mostrarInfo">
-                        
+
                     </div>
-                    
-                    
-                  
+
+
+
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-5 col-right">
                     <div id="scroll-shadow"></div> 
