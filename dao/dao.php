@@ -1,8 +1,21 @@
 <?php
 
+class dao{
+
+function insertarProducto(producto $p){
+     include '../DaoConnection/coneccion.php';
+        $cn = new coneccion();
+        $sql = "INSERT INTO producto(nombreProducto, precioProducto, descripcionProducto)
+                VALUES('" . $calificaciones->getUsuario() . "',
+                '" . $p->getNombreProducto() . "',
+                '" . $p->getPrecioProducto() . "', 
+                '" . $p->getDescripcionProducto() . "')";
+        mysql_query($sql, $cn->Conectarse());
+    
+    
+}
 
 
-class dao {
 
     function validarLogin(usuario $u) {
 //        include '../DaoConnection/coneccion.php';
