@@ -4,6 +4,7 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
 {
  
     //obtenemos el archivo a subir
+    $algo=$_POST["formData"];
     $file = $_FILES['archivo']['name'];
  
     //comprobamos si existe un directorio para subir el archivo
