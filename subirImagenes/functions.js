@@ -26,56 +26,56 @@ $(document).ready(function() {
     //al enviar el formulario
 
     $('#botonazo').click(function() {
-var nombre =$('#nombreProducto').val();
-var precio =$('#PrecioProducto').val();
-var descripcion = $('#DescripcionProducto').val();
-alert(descripcion);
+        var nombre = $('#nombreProducto').val();
+        var precio = $('#PrecioProducto').val();
+        var descripcion = $('#DescripcionProducto').val();
+        alert(descripcion);
         //información del formulario
 //        var formData = new FormData($(".formulario")[0]);
         var formData = new FormData($("form#formu")[0]);
-                var message = "";
+        var message = "";
         //hacemos la petición ajax 
-        if(nombre !== "" && precio !== "" && descripcion !== ""){
-        
-        if (isImage(fileExtension)) {
-            $.ajax({
-                url: 'upload.php',
-                type: 'POST',
-                // Form data
-                //datos del formulario
-                data: formData,
-                //necesario para subir archivos via ajax
-                cache: false,
-                contentType: false,
-                processData: false,
-                //mientras enviamos el archivo
-                beforeSend: function() {
-                    message = $("<span class='before'>Subiendo la imagen, por favor espere...</span>");
-                    showMessage(message)
-                },
-                //una vez finalizado correctamente
-                success: function(data) {
-                    message = $("<span class='success'>La imagen ha subido correctamente.</span>");
-                    showMessage(message);
-                    if (isImage(fileExtension))
-                    {
-                        $(".showImage").html("<img src='files/" + data + "' />");
+        if (nombre !== "" && precio !== "" && descripcion !== "") {
+
+            if (isImage(fileExtension)) {
+                $.ajax({
+                    url: 'upload.php',
+                    type: 'POST',
+                    // Form data
+                    //datos del formulario
+                    data: formData,
+                    //necesario para subir archivos via ajax
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    //mientras enviamos el archivo
+                    beforeSend: function() {
+                        message = $("<span class='before'>Subiendo la imagen, por favor espere...</span>");
+                        showMessage(message)
+                    },
+                    //una vez finalizado correctamente
+                    success: function(data) {
+                        message = $("<span class='success'>La imagen se ha subido correctamente.</span>");
+                        showMessage(message);
+                        if (isImage(fileExtension))
+                        {
+                            $(".showImage").html("<img class=\"img-responsive\" style=\"margin: 0 auto; width: 300px\" src='../images/" + data + "' />");
+                        }
+                    },
+                    //si ha ocurrido un error
+                    error: function() {
+                        message = $("<span class='error'>Ha ocurrido un error.</span>");
+                        showMessage(message);
                     }
-                },
-                //si ha ocurrido un error
-                error: function() {
-                    message = $("<span class='error'>Ha ocurrido un error.</span>");
-                    showMessage(message);
-                }
-            });
+                });
+            } else {
+                showMessage("<span class='error'>El formato no es correcto</span>");
+            }
         } else {
-            showMessage("<span class='error'>El formato no es correcto</span>");
+            alert("todos los campos son obligatorios");
         }
-    }else {
-        alert("todos los campos son obligatorios");
-    }
     });
-    
+
 })
 
 //como la utilizamos demasiadas veces, creamos una función para 
