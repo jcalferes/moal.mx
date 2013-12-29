@@ -152,14 +152,15 @@
                             if (info == 1)
                             {
                                 alertify.error("Email no valido");
+                                $("#txtemail").val("");
                             }
                             if (info == 2)
                             {
                                 alertify.success("Todo bien.");
+                                $("#txtemail").val("");
+                                $("#txamensaje").val("");
                             }
                         });
-                        $("#txtemail").val("");
-                        $("#txamensaje").val("");
                     }
                 });
             });

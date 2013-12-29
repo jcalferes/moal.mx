@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Nombre Empresa - Contacto</title>
+        <title>Nuevo Producto - MOAL</title>
         <link rel="icon" type="image/png" href="#">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <!-- Bootstrap -->
@@ -38,13 +38,7 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="index.php">Inicio</a></li>
-                            <li><a href="contacto.php">Contacto</a></li>
-                            <li><a href="">Otro</a></li>
-                            <li><a href="">Otro</a></li>
-                            <li><a href="">Otro</a></li>
-                            <li><a href="">Otro</a></li>
-                            <li><a href="">Otro</a></li>
+                            <li><a href="indexadmin.php">Inicio</a></li>
                         </ul>
                     </div>
                 </nav>

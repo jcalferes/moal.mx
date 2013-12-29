@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Nombre Empresa - Contacto</title>
+        <title>Administracion - MOAL</title>
         <link rel="icon" type="image/png" href="#">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <!-- Bootstrap -->
@@ -39,7 +39,7 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="nuevoProducto.php">Productos</a></li>
+                            <li><a href="subirImagenes/index.php">Productos</a></li>
                             <li><a href="nuevoAdmin.php">Administradores</a></li>
                             <li><a href="">Cerrar Sesion</a></li>
                         </ul>
