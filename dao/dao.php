@@ -2,16 +2,18 @@
 
 class dao{
 
-function insertarProducto(producto $p){
+function insertarProducto(producto $p, imagen $i){
      include '../DaoConnection/coneccion.php';
         $cn = new coneccion();
-        $sql = "INSERT INTO producto(nombreProducto, precioProducto, descripcionProducto)
-                VALUES('" . $calificaciones->getUsuario() . "',
-                '" . $p->getNombreProducto() . "',
+        $sql = "INSERT INTO producto(nombreProducto, precio, descripcionProducto)
+                VALUES('" . $p->getNombreProducto() . "',
                 '" . $p->getPrecioProducto() . "', 
                 '" . $p->getDescripcionProducto() . "')";
         mysql_query($sql, $cn->Conectarse());
-    
+      $cn = new coneccion();
+        $sql = "INSERT INTO imagen(ruta)
+                VALUES('" .$i->getRuta() . "')";
+        mysql_query($sql, $cn->Conectarse());
     
 }
 
