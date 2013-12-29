@@ -26,12 +26,17 @@ $(document).ready(function() {
     //al enviar el formulario
 
     $('#botonazo').click(function() {
-
+var nombre =$('#nombreProducto').val();
+var precio =$('#PrecioProducto').val();
+var descripcion = $('#DescripcionProducto').val();
+alert(descripcion);
         //información del formulario
 //        var formData = new FormData($(".formulario")[0]);
         var formData = new FormData($("form#formu")[0]);
                 var message = "";
         //hacemos la petición ajax 
+        if(nombre !== "" && precio !== "" && descripcion !== ""){
+        
         if (isImage(fileExtension)) {
             $.ajax({
                 url: 'upload.php',
@@ -66,7 +71,11 @@ $(document).ready(function() {
         } else {
             showMessage("<span class='error'>El formato no es correcto</span>");
         }
+    }else {
+        alert("todos los campos son obligatorios");
+    }
     });
+    
 })
 
 //como la utilizamos demasiadas veces, creamos una función para 

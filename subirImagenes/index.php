@@ -47,9 +47,9 @@
 <body>
     <!--el enctype debe soportar subida de archivos con multipart/form-data-->
     <form enctype="multipart/form-data" class="formulario" id="formu">
-        <input type="text" id="algo" name="nombreProducto" placeholder="nombreProducto">
-        <input type="text" id="algo" name="PrecioProducto" placeholder="precioProducto">
-        <input type="text" id="algo" name="DescripcionProducto" placeholder="descripcionProducto">
+        <input type="text" id="nombreProducto" name="nombreProducto" placeholder="nombreProducto">
+        <input type="text" id="PrecioProducto" name="PrecioProducto" placeholder="precioProducto">
+        <input type="text" id="DescripcionProducto" name="DescripcionProducto" placeholder="descripcionProducto">
         <label>Subir un archivo</label>
         <input name="archivo" type="file" id="imagen" /><br /><br />
         <input type="button" value="Subir imagen" id="botonazo"/><br />
