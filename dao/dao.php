@@ -5,9 +5,10 @@ class dao {
     function insertarProducto(producto $p, imagen $i) {
         include '../DaoConnection/coneccion.php';
         $cn = new coneccion();
-        $sql = "INSERT INTO producto(nombreProducto, precio, descripcionProducto)
+        $sql = "INSERT INTO producto(nombreProducto, Precio, idProducto,Descripcion)
                 VALUES('" . $p->getNombreProducto() . "',
                 '" . $p->getPrecioProducto() . "', 
+                '" . $p->getidProducto() . "',    
                 '" . $p->getDescripcionProducto() . "')";
         mysql_query($sql, $cn->Conectarse());
         $cn = new coneccion();

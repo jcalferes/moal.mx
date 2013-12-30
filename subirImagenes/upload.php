@@ -10,6 +10,7 @@ $imagen = new imagen();
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
 
     //obtenemos el archivo a subir
+    $producto->setidProducto($_POST["idProducto"]);
     $producto->setNombreProducto($_POST["nombreProducto"]);
     $producto->setPrecioProducto($_POST["PrecioProducto"]);
     $producto->setDescripcionProducto($_POST["DescripcionProducto"]);
@@ -22,7 +23,7 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
 
     //comprobamos si el archivo ha subido
     if ($file && move_uploaded_file($_FILES['archivo']['tmp_name'], "../images/" . $file)) {
-        $direccion = "../images/" . $file;
+        $direccion = "images/" . $file;
         $imagen->setRuta($direccion);
         $dao->insertarProducto($producto, $imagen);
         sleep(3); //retrasamos la petición 3 segundos

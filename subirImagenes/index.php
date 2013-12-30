@@ -58,6 +58,9 @@
                                     <div class="panel panel-default contact btn-footer">
                                         <div class="panel-body">
                                             <div class="form-group">
+                                                <input type="text" class="form-control" id="idProducto" name="idProducto" placeholder="identificador del producto">
+                                            </div>
+                                            <div class="form-group">
                                                 <input type="text" class="form-control" id="nombreProducto" name="nombreProducto" placeholder="Nombre del producto">
                                             </div>
                                             <div class="form-group">

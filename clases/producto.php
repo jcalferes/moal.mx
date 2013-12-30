@@ -12,10 +12,20 @@
  * @author Angel Solis
  */
 class producto {
+    private $idProducto;
     private $nombreProducto;
     private $precioProducto;
     private $descripcionProducto;
-    public function getNombreProducto() {
+    
+    public function getIdProducto() {
+        return $this->idProducto;
+    }
+
+    public function setIdProducto($idProducto) {
+        $this->idProducto = $idProducto;
+    }
+
+        public function getNombreProducto() {
         return $this->nombreProducto;
     }
 
