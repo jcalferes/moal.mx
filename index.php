@@ -39,7 +39,7 @@
     </head>
     <body class="page-index">
         <div class="container" id="container">
-            <a onclick="mi_funcion()"></a>
+            
             <div class="row top">
                 <nav class="navbar navbar-inverse" role="navigation" style="margin-top: -6px">
                     <div class="navbar-header">

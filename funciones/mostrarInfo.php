@@ -3,7 +3,7 @@ include '../clases/imagen.php';
 include '../DaoConnection/coneccion.php';
 $cn = new coneccion();
 $id=$_GET["id"];
-$sql = "SELECT * FROM imagen i, producto p, ofertas o Where i.idImagen = p.idimagen and o.idProductoOferta= p.idProducto AND idProducto=$id";
+$sql = "SELECT * FROM imagen i, producto p, ofertas o Where i.idImagen = p.idimagen and o.idProductoOferta= p.idProducto AND idProducto='$id'";
 $datos = mysql_query($sql, $cn->Conectarse());
 // $imagen= new imagen();
 // while($rs=mysql_fetch_array($datos)){
